@@ -1,0 +1,17 @@
+# Worker Activity Monitor configuration
+
+camera_index: 0
+model_name: yolov8n.pt          # YOLOv8 nano — fast, good enough for this task
+confidence_threshold: 0.45
+detect_every_n_frames: 5        # run detection every Nth frame to save CPU
+
+# Optional: head-pose heuristic to reduce false "PHONE" positives
+use_gaze_heuristic: false
+
+log_file: data/activity_log.csv
+
+# Labels (must match COCO class names used by the YOLO model)
+labels:
+  person: person
+  laptop: laptop
+  phone: cell phone
