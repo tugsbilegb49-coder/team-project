@@ -74,6 +74,10 @@ class ActivityTracker:
     def current_elapsed(self) -> float:
         return self._clock() - self.state_start
 
+    def reset_timer(self) -> None:
+        """Discard the elapsed period without logging it, e.g. while monitoring is paused."""
+        self.state_start = self._clock()
+
     def finalize(self) -> None:
         """Call at shutdown to flush the time spent in the current state."""
         now = self._clock()

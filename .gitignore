@@ -9,6 +9,14 @@ env/
 # runtime artifacts
 data/*.csv
 *.pt
+backend/db.sqlite3
+backend/.env
+backend/staticfiles/
+agent/config.json
+agent/.agent_tokens.json
+agent/.pending_events.json
+agent/control.json
+data/.pending_camera_events.json
 
 # streamlit
 .streamlit/
