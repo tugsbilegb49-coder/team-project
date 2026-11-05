@@ -119,3 +119,5 @@ productivity score харагдана.
 ## Зогсоох
 
 Agent, camera болон backend ажиллаж буй Terminal бүр дээр `Ctrl + C` дарна.
+
+admin username burenbaaatar password 1234
